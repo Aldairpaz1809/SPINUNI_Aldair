@@ -37,7 +37,7 @@ def energia_libre(angulo, parametros):
 
     return zeeman + ani_mag_cris + ani_uniaxial
 
-def angulo(parametros,paso=1e-3):
+def angulo(parametros,paso=1e-2):
     H = parametros["H"]
     H_vals = H * np.concatenate((np.arange(-1, 1, paso), np.arange(1, -1,-paso)))
     
